@@ -2,18 +2,26 @@
   "name": "easy-to-remember-password-generator",
   "version": "1.0.0",
   "description": "Creates examples of strong passwords with good entropy while being easy to remember",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "password",
+    "passphrase",
     "generator",
-    "correct",
-    "horse",
-    "battery",
-    "staple"
+    "correct horse battery staple",
+    "password generator",
+    "dictionary",
+    "easy-to-remember",
+    "good enough for average users",
+    "random"
   ],
+  "homepage": "https://github.com/itsmikechu/easy-to-remember-password-generator",
   "author": "Mike Chu",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+		"type": "git",
+		"url": "git://github.com/itsmikechu/easy-to-remember-password-generator.git"
+	}
 }
