@@ -21,7 +21,11 @@
   "author": "Mike Chu",
   "license": "MIT",
   "repository": {
-		"type": "git",
-		"url": "git://github.com/itsmikechu/easy-to-remember-password-generator.git"
-	}
+    "type": "git",
+    "url": "git://github.com/itsmikechu/easy-to-remember-password-generator.git"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
 }
