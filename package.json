@@ -1,0 +1,19 @@
+{
+  "name": "easy-to-remember-password-generator",
+  "version": "1.0.0",
+  "description": "Creates examples of strong passwords with good entropy while being easy to remember",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "password",
+    "generator",
+    "correct",
+    "horse",
+    "battery",
+    "staple"
+  ],
+  "author": "Mike Chu",
+  "license": "ISC"
+}
