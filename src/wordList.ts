@@ -4,7 +4,7 @@
  */
 
 export class WordList {
-  readonly words = [
+  public readonly words = [
     'people',
     'history',
     'way',
