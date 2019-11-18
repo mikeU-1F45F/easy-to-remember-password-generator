@@ -4,7 +4,9 @@
   "description": "Creates examples of strong passwords with good entropy while being easy to remember",
   "main": "lib/index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "pretest": "npm run lint",
+    "test": "jest"
   },
   "keywords": [
     "password",
@@ -25,7 +27,16 @@
     "url": "git://github.com/itsmikechu/easy-to-remember-password-generator.git"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.2.2"
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.7.2"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": ["ts", "tsx", "js"]
   }
 }
