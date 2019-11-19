@@ -1,11 +1,29 @@
 import { E2rpg } from './index';
 
-describe('The Generator', () => {
-  it('should have a friendly welcome message', () => {
-    const testMessage = 'Hello E2RPG. :-)';
+describe('The Generator generates a password that', () => {
+  let passphraseUnderTest: string;
+  beforeAll(() => {
+    const generator: E2rpg = new E2rpg();
+    passphraseUnderTest = generator.generatePassword();
+  });
 
-    const message = new E2rpg(testMessage).message;
+  it('is longer than 15 characters', () => {
+    expect(passphraseUnderTest.length).toBeGreaterThanOrEqual(15);
+  });
 
-    expect(message).toEqual(testMessage);
+  it('contains 2-digit number', () => {
+    expect(passphraseUnderTest.match(/[0-9]{2}/)).toBeTruthy();
+  });
+
+  it('contains symbols', () => {
+    expect(passphraseUnderTest.match(/    /)).toBeTruthy();
+  });
+
+  it('contains uppercase characters', () => {
+    expect(passphraseUnderTest.match(/    /)).toBeTruthy();
+  });
+
+  it('contains lowercase characters', () => {
+    expect(passphraseUnderTest.match(/    /)).toBeTruthy();
   });
 });
