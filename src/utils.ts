@@ -1,5 +1,7 @@
 export class Utils {
-  public random0OrGreaterInteger(largestPossibleInteger: number): number {
+  public static random0OrGreaterInteger(
+    largestPossibleInteger: number,
+  ): number {
     const min: number = 0;
     const max: number = Math.floor(largestPossibleInteger);
 
