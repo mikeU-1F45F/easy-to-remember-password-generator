@@ -1,6 +1,6 @@
 import { E2rpg } from './index';
 
-describe('Main Generator', () => {
+describe('The Generator', () => {
   it('should have a friendly welcome message', () => {
     const testMessage = 'Hello E2RPG. :-)';
 
