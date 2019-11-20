@@ -1531,9 +1531,7 @@ export class WordList {
   ];
 
   public randomWord(): string {
-    const randomIndex: number = Utils.random0OrGreaterInteger(
-      this.words.length,
-    );
+    const randomIndex: number = Utils.randomInteger(0, this.words.length);
 
     return this.words[randomIndex];
   }

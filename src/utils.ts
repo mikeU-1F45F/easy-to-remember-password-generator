@@ -1,5 +1,6 @@
 export class Utils {
-  public static random0OrGreaterInteger(
+  public static randomInteger(
+    smallestPossibleInteger: number,
     largestPossibleInteger: number,
   ): number {
     const min: number = 0;
