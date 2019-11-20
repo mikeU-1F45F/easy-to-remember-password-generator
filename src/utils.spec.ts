@@ -14,4 +14,10 @@ describe('Utils', () => {
     );
     expect(selectedRandomInteger).toBeLessThanOrEqual(largestPossibleInteger);
   });
+
+  it('produces a title-case version of a word', () => {
+    const titleCaseVersion: string = Utils.titleCase('bananas');
+
+    expect(titleCaseVersion).toEqual('Bananas');
+  });
 });
