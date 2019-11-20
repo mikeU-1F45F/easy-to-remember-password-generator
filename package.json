@@ -8,7 +8,9 @@
     "pretest": "npm run lint",
     "test": "jest",
     "test:watch": "onchange --await-write-finish 2000 src/**/*.{ts,tsx} -- npm run test",
-    "test:coverage": "npm run test -- --coverage"
+    "test:coverage": "npm run test -- --coverage",
+    "prebuild": "npm run test",
+    "build": "tsc"
   },
   "keywords": [
     "password",
