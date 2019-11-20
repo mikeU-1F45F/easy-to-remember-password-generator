@@ -5,7 +5,7 @@
     "target": "es6",
     "removeComments": true,
     "preserveConstEnums": true,
-    "outFile": "./lib/index.js",
+    "outFile": "./lib/index.max.js",
     "rootDir": "./src/"
   },
   "exclude": [

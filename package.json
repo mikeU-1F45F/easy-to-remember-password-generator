@@ -10,7 +10,8 @@
     "test:watch": "onchange --await-write-finish 2000 src/**/*.{ts,tsx} -- npm run test",
     "test:coverage": "npm run test -- --coverage",
     "prebuild": "npm run test",
-    "build": "tsc"
+    "build": "tsc",
+    "postbuild": "google-closure-compiler --js=./lib/index.max.js --js_output_file=./lib/index.js"
   },
   "keywords": [
     "password",
