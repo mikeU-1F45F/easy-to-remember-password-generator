@@ -15,15 +15,15 @@ describe('The Generator generates a password that', () => {
     expect(passphraseUnderTest.match(/[0-9]{2}/)).toBeTruthy();
   });
 
-  it('contains symbols', () => {
-    expect(passphraseUnderTest.match(/    /)).toBeTruthy();
+  it('contains commonly accepted & memorable symbols', () => {
+    expect(passphraseUnderTest.match(/[\._\-]/)).toBeTruthy();
   });
 
   it('contains uppercase characters', () => {
-    expect(passphraseUnderTest.match(/    /)).toBeTruthy();
+    expect(passphraseUnderTest.match(/[A-Z]/)).toBeTruthy();
   });
 
   it('contains lowercase characters', () => {
-    expect(passphraseUnderTest.match(/    /)).toBeTruthy();
+    expect(passphraseUnderTest.match(/[a-z]/)).toBeTruthy();
   });
 });
