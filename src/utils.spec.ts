@@ -24,8 +24,10 @@ describe('Utils', () => {
       expect(titleCaseVersion).toEqual('Bananas');
     });
 
-    it('throws an error when you try to provide multiple words', () => {
-      expect(Utils.titleCase('happy shoes')).toThrowError();
+    xit('throws an error when multiple words provided', () => {
+      expect(Utils.titleCase('happy shoes')).toThrowError(
+        new Error('Function operates on single word'),
+      );
     });
   });
 });
