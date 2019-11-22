@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Test</title>
+</head>
+
+<body>
+  <script src="./lib/e2rpg.js"></script>
+  <script>
+    function displayGeneratedPassword() {
+      var generator = new module$lib$index.E2rpg();
+      document.getElementById('generated-password').innerHTML = generator.generatePassword();
+    }
+    window.onload = displayGeneratedPassword;
+  </script>
+  <button onclick="displayGeneratedPassword()">generate</button>
+  <div id="generated-password">Initial text</div>
+</body>
+
+</html>
