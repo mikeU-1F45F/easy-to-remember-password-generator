@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "module": "amd",
+    "target": "es2015",
     "moduleResolution": "node",
-    "target": "es6",
     "removeComments": true,
     "preserveConstEnums": true,
-    "outFile": "./lib/index.max.js",
+    "outDir": "./lib/",
     "rootDir": "./src/"
   },
   "exclude": [
