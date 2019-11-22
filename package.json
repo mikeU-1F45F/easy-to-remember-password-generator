@@ -11,7 +11,7 @@
     "test:coverage": "npm run test -- --coverage",
     "prebuild": "npm run test",
     "build": "tsc",
-    "postbuild": "google-closure-compiler --js=./lib/index.max.js --js_output_file=./lib/index.js"
+    "postbuild": "google-closure-compiler --js=./lib/*.js --js_output_file=./lib/e2rpg.js --module_resolution=NODE"
   },
   "keywords": [
     "password",
@@ -35,6 +35,7 @@
     "@types/jest": "^24.0.23",
     "google-closure-compiler": "^20191111.0.0",
     "jest": "^24.9.0",
+    "jest-diff": "^24.9.0",
     "onchange": "^6.1.0",
     "ts-jest": "^24.1.0",
     "typescript": "^3.7.2"
