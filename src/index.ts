@@ -3,7 +3,6 @@ import { WordList } from './wordList';
 
 export class E2rpg {
   public generatePassword(): string {
-    const numberComponent: number = Utils.randomInteger(10, 99);
 
     const wordList: WordList = new WordList();
 
@@ -12,9 +11,13 @@ export class E2rpg {
       selectedWords.push(Utils.titleCase(wordList.randomWord()));
     }
 
+    const numberComponent: number = Utils.randomInteger(10, 99);
     selectedWords.push(numberComponent.toString());
 
-    const passphrase = this.shuffle(selectedWords).join('-');
+    const separatorIndex: number = Utils.randomInteger(0, 3);
+    const separator: string = ['.', '_', '-'][separatorIndex];
+
+    const passphrase = this.shuffle(selectedWords).join(separator);
 
     return passphrase;
   }
